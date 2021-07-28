@@ -1,0 +1,85 @@
+@themeColor: #68d8fe;
+
+// 自定义的公共样式统一添加qxwm-前缀
+.qxwm-text-center() {
+  text-align: center;
+}
+.qxwm-margin-t-10 {
+  margin-top: 10px;
+}
+.qxwm-margin-t-20 {
+  margin-top: 20px;
+}
+.qxwm-float-left {
+  float: left;
+}
+.qxwm-float-right {
+  float: right;
+}
+.auto-pointer-event {
+  pointer-events: none;
+  * {
+    pointer-events: auto;
+  }
+}
+
+@font-face {
+  font-family: 'digit-font';
+  src: url('~@/style/digit-font/open-24-display-st.eot'); /* IE9 Compat Modes */
+  src: url('~@/style/digit-font/open-24-display-st.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('~@/style/digit-font/open-24-display-st.woff')
+      format('woff'),
+    /* Modern Browsers */
+      url('~@/style/digit-font/original-open-24-display-st.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('~@/style/digit-font/open-24-display-st.svg#digit-font') format('svg'); /* Legacy iOS */
+}
+.digital {
+  font-family: 'digit-font';
+}
+.digital-unit-green {
+  font-family: 'digit-font';
+  color: #13efa9;
+  span:nth-child(1) {
+    font-size: 36px;
+  }
+  span:nth-child(2) {
+    font-size: 18px;
+    font-family: PingFang-SC-Regular;
+  }
+}
+.digital-unit-yellow {
+  font-family: 'digit-font';
+  color: #efc313;
+  span:nth-child(1) {
+    font-size: 36px;
+  }
+  span:nth-child(2) {
+    font-size: 18px;
+    font-family: PingFang-SC-Regular;
+  }
+}
+.qxwm-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  box-shadow: inset 0px 0px 16px 0px rgb(13, 85, 196, 0.54);
+  outline: solid 1px #68d8fe;
+  padding: 0px 12px;
+  border: none;
+  &:focus {
+    box-shadow: inset 0px 0px 70px 0px rgb(13, 85, 196, 0.54);
+    outline: solid 1px #68d8fe;
+    border: none;
+  }
+}
+.rm-after {
+  &::after {
+    content: '';
+    display: none !important;
+  }
+}
